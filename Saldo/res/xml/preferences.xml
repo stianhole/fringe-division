@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        
+        <CheckBoxPreference 
+            android:key="saldoEnable"
+            android:summary="@string/enable_desc"
+            android:title="@string/enable_saldo" 
+            android:defaultValue="false"
+            />
+        <EditTextPreference
+            android:name="Saldo Recipient"
+            android:summary="@string/recipient_desc"
+            android:defaultValue=""
+            android:title="@string/recipient"
+            android:key="saldoRecipient"
+            />
+        <EditTextPreference
+            android:name="Saldo Message"
+            android:summary="@string/message_desc"
+            android:defaultValue=""
+            android:title="@string/message"
+            android:key="saldoMessage"
+            />
+    
+</PreferenceScreen>

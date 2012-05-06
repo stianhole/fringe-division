@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="welcome">Welcome to Saldo! Press your menu button for settings, testing and stuffs.</string>
+    <string name="app_name">Saldo</string>
+    <string name="preferences">Preferences</string>
+    
+    <string name="enable_saldo">Enable Saldo</string>
+    <string name="enable_desc">Enable or disable saldo</string>
+    
+    <string name="recipient">Recipient</string>
+    <string name="recipient_desc">This is the recipient of your message</string>
+    
+    <string name="message">Message</string>
+    <string name="message_desc">Your message</string>
+    
+    <string name="sendtest">Send Test</string>
+
+</resources>
