@@ -15,5 +15,6 @@
     <string name="message_desc">Your message</string>
     
     <string name="sendtest">Send Test</string>
+    <string name="livemap">Live Map</string>
 
 </resources>
