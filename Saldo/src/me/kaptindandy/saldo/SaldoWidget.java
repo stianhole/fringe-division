@@ -13,7 +13,7 @@ import android.util.Log;
 import android.widget.RemoteViews;
 
 public class SaldoWidget extends AppWidgetProvider {
-	
+	// code tutorial @ http://buildmobile.com/how-to-code-an-android-widget/
 	  DateFormat df = new SimpleDateFormat("hh:mm:ss");
 	  public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 	    final int N = appWidgetIds.length;
