@@ -16,7 +16,8 @@
     
     <string name="sendtest">Send Test</string>
     
-	<string name="saldowidget">Saldo Widget</string>
+	<string name="saldowidget">1 Saldo Widget</string>
 	<string name="widget_saldo">Saldo!</string>
+	<string name="saldoservice">Saldo Service</string>
 
 </resources>
