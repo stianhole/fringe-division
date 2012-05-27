@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class SaldoActivity extends Activity {
 
-	
+
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,7 +75,7 @@ public class SaldoActivity extends Activity {
 	String saldoRecipient;
 	String saldoMessage;
 	
-	private void getPrefs() {
+	public void getPrefs() {
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		saldoEnable = prefs.getBoolean("saldoEnable", true);
 		saldoRecipient = prefs.getString("saldoRecipient", "");
