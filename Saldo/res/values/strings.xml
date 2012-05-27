@@ -19,5 +19,7 @@
 	<string name="saldowidget">1 Saldo Widget</string>
 	<string name="widget_saldo">Saldo!</string>
 	<string name="saldoservice">Saldo Service</string>
+	
+	<string name="saldo_not_enabled">Nothing sent, enable Saldo in preferences!</string>
 
 </resources>

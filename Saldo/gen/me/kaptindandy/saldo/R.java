@@ -37,6 +37,7 @@ public final class R {
         public static final int preferences=0x7f050002;
         public static final int recipient=0x7f050005;
         public static final int recipient_desc=0x7f050006;
+        public static final int saldo_not_enabled=0x7f05000d;
         public static final int saldoservice=0x7f05000c;
         public static final int saldowidget=0x7f05000a;
         public static final int sendtest=0x7f050009;

@@ -12,11 +12,11 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class SaldoActivity extends Activity {
-	
+
 	boolean saldoEnable;
 	String saldoRecipient;
 	String saldoMessage;
-
+	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +48,7 @@ public class SaldoActivity extends Activity {
 			if (saldoEnable) {
 				sendSaldo();
 			} else {
-				Toast.makeText(this, "Nothing sent, enable Saldo in preferences!", Toast.LENGTH_LONG).show();
+				Toast.makeText(this, R.string.saldo_not_enabled, Toast.LENGTH_LONG).show();
 			}
 			break;
 		case R.id.showprefs:
@@ -77,6 +77,7 @@ public class SaldoActivity extends Activity {
 	
 	public void getPrefs() {
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+		
 		saldoEnable = prefs.getBoolean("saldoEnable", true);
 		saldoRecipient = prefs.getString("saldoRecipient", "");
 		saldoMessage = prefs.getString("saldoMessage", "");
