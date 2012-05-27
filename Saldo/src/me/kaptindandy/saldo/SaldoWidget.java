@@ -12,12 +12,14 @@ import android.widget.RemoteViews;
 import android.widget.Toast;
 
 public class SaldoWidget extends AppWidgetProvider {
-	public static final String PREFS_NAME = "preferences";
 	private static String APPWIDGET_SALDO = "ActionReceiverSaldo";
 
+	boolean saldoEnable;
+	String saldoRecipient;
+	String saldoMessage;
+	
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
-		getPrefs(context);
 		
 		final int N = appWidgetIds.length;
 		
@@ -39,7 +41,6 @@ public class SaldoWidget extends AppWidgetProvider {
 	}
 		
 	public void onReceive(Context context, Intent intent) {
-		
 
 		if (intent.getAction().equals(APPWIDGET_SALDO)) {
 			// Send message
@@ -48,21 +49,8 @@ public class SaldoWidget extends AppWidgetProvider {
 			
 			// Let the user know
 			Toast.makeText(context, "Message sent", Toast.LENGTH_SHORT).show();
-			Toast.makeText(context, saldoMessage, Toast.LENGTH_SHORT).show();
 		} else {
 			super.onReceive(context, intent);
 		}
-	}
-	
-	// preferences
-	boolean saldoEnable;
-	String saldoRecipient;
-	String saldoMessage;
-	
-	public void getPrefs(Context context) {
-		SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, 0);
-		saldoEnable = prefs.getBoolean("saldoEnable", true);
-		saldoRecipient = prefs.getString("saldoRecipient", "");
-		saldoMessage = prefs.getString("saldoMessage", "");
 	}
 }

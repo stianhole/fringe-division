@@ -5,8 +5,7 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:gravity="center"
-  android:layout_margin="4dp"
-  android:background="@drawable/background">
+  android:layout_margin="0dp">
   
     <Button android:text="@string/widget_saldo" 
         android:id="@+id/button" 
