@@ -31,9 +31,20 @@ public class SaldoActivity extends Activity {
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.menu, menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		
+		// Enable/Disable the "Send Test" menu item based on preferences
+		if (saldoEnable == true) {
+			menu.getItem(1).setEnabled(true);
+		} else {
+			menu.getItem(1).setEnabled(false);
+		}
 		return true;
 	}
 	

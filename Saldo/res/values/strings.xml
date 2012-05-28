@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="welcome">Welcome to Saldo! Press your menu button for settings, testing and stuffs.</string>
+    <string name="welcome">Welcome to Saldo! Press your menu button for settings, testing and such.</string>
     <string name="app_name">Saldo</string>
     <string name="preferences">Preferences</string>
     
