@@ -75,7 +75,7 @@ public class SaldoActivity extends Activity {
 		
 		return true;
 	}
-	
+
 	// for sending message
 	private void sendSaldo() {
 			SmsManager sms = SmsManager.getDefault();

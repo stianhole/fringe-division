@@ -41,7 +41,7 @@ public class SaldoWidget extends AppWidgetProvider {
 		}
 	}
 		
-	public void onReceive(Context context, Intent intent) {
+	public void onReceive(final Context context, Intent intent) {
 		
 		if (intent.getAction().equals(APPWIDGET_SALDO)) {
 			
@@ -59,7 +59,6 @@ public class SaldoWidget extends AppWidgetProvider {
 				// if sending is disabled
 				Toast.makeText(context, R.string.saldo_not_enabled, Toast.LENGTH_SHORT).show();
 			}
-			
 
 		} else {
 			super.onReceive(context, intent);
