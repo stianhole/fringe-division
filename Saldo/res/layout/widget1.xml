@@ -7,8 +7,8 @@
   android:gravity="center"
   android:layout_margin="0dp">
   
-    <Button android:text="@string/widget_saldo" 
-        android:id="@+id/button" 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" />
+     <ImageButton android:id="@+id/button"
+        android:src="@drawable/ic_saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
